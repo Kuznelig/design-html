@@ -423,6 +423,66 @@ div.line {
     margin: 0 auto;
 }
 
+/* footer */
+.page-footer {
+    background-color: var(--accent-color);
+    padding-top: 51px;
+    padding-bottom: 50px;
+}
+
+.footer-container {
+    max-width: 1140px;
+    margin: 0 auto;
+
+    display: flex;
+    /* justify-content: space-between; */
+    padding-left: 17px;
+
+}
+
+.footer-content {
+    margin-right: 100px;
+}
+
+.social-list {
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.social-list-item {
+    margin-right: 22px;
+    padding-top: 5px;
+}
+
+.social-list-item:last-child {
+    margin-right: 0;
+}
+
+.footer-content .author {
+    color: var(--white-color);
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.footer-content .copyright {
+    color: rgba(255, 255, 255, 1);
+    font-size: 13px;
+    line-height: 13px;
+}
+
+.social-list-item a {
+    display: block;
+}
+
+
+
 
 
 @media screen and (max-width: 1280px) {
@@ -519,7 +579,13 @@ div.line {
         gap: 30px;
         justify-items: center;
     }
+
     .form-section {
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+
+    .page-footer {
         padding-right: 50px;
         padding-left: 50px;
     }
@@ -604,28 +670,44 @@ div.line {
         padding-right: 75px;
         padding-left: 75px;
     }
+
     .form-container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    column-gap: 30px;
-    row-gap: 20px;
-    color: rgba(95, 93, 93, 1);
-    margin-bottom: 50px;
-    
-}
-.name-input {
-    grid-column: 1 / 2;
-}
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 30px;
+        row-gap: 20px;
+        color: rgba(95, 93, 93, 1);
+        margin-bottom: 50px;
 
-.email-input {
-    grid-column: 1 / 2;
-}
+    }
 
-.form-message {
-    grid-column: 1 / 2;
-}
-.form-section form {
-    max-width: 450px;
-    margin: 0 auto;
+    .name-input {
+        grid-column: 1 / 2;
+    }
+
+    .email-input {
+        grid-column: 1 / 2;
+    }
+
+    .form-message {
+        grid-column: 1 / 2;
+    }
+
+    .form-section form {
+        max-width: 450px;
+        margin: 0 auto;
+    }
+
+    .svg-container {
+        width: 70%;
+    }
+
+    .svg-container svg {
+        width: 100%;
+        height: auto;
+    }
+    .social-list-item {
+    margin-right: 0;
+    padding-top: 0;
 }
 }
